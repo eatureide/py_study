@@ -66,13 +66,23 @@ class AlienInvasion:
         self._check_flet_edges()
         self.aliens.update()
 
+    def _check_bullet_alien_collisions(self):
+        collisions = pygame.sprite.groupcollide(
+            self.bullets, self.aliens, True, True
+        )
+
+        if not self.aliens:
+            # 删除现有子弹，创建一群新的外星人
+            self.bullets.empty()
+            self._create_fleet()
+
     def _update_bullets(self):
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
-        # print(len(self.bullets))
 
     # 游戏的鼠标键盘事件
+
     def _check_events(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
