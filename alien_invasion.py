@@ -59,16 +59,18 @@ class AlienInvasion:
             self._update_bullets()
             self.aliens.update()
             self._update_aliens()
+            self._update_screen()
             self.clock.tick(60)
 
     def _update_aliens(self):
+        self._check_flet_edges()
         self.aliens.update()
 
     def _update_bullets(self):
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
-        print(len(self.bullets))
+        # print(len(self.bullets))
 
     # 游戏的鼠标键盘事件
     def _check_events(self):
@@ -102,6 +104,17 @@ class AlienInvasion:
             self.ship.moving_right = False
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = False
+
+    def _check_flet_edges(self):
+        for alien in self.aliens.sprites():
+            if alien.check_edges():
+                self._change_fleet_direction()
+                break
+
+    def _change_fleet_direction(self):
+        for alien in self.aliens.sprites():
+            alien.rect.y += self.settings.fleet_drop_speed
+        self.settings.fleet_direction *= -1
 
     # 每次循环都重新绘制屏幕
     def _update_screen(self):
