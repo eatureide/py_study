@@ -81,6 +81,8 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
+        self._check_bullet_alien_collisions()
+
     # 游戏的鼠标键盘事件
 
     def _check_events(self):
