@@ -3,6 +3,7 @@ import pygame
 from setting import Settings
 from ship import Ship
 from bullet import Bullet
+from alien import Alien
 
 
 class AlienInvasion:
@@ -17,6 +18,32 @@ class AlienInvasion:
         pygame.display.set_caption("Alien Invasion")
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
+        self.aliens = pygame.sprite.Group()
+
+        self._create_fleet()
+
+    def _create_alien(self, alien_number, row_number):
+        alien = Alien(self)
+        alien_width, alien_height = alien.rect.size
+        alien.x = alien_width + 2 * alien_width * alien_number
+        alien.rect.x = alien.x
+        alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
+        self.aliens.add(alien)
+
+    def _create_fleet(self):
+        alien = Alien(self)
+        alien_width = alien.rect.width
+        avaliable_space_x = self.settings.screen_width - (2 * alien_width)
+        number_alien_x = avaliable_space_x // (2 * alien_width)
+
+        ship_height = self.ship.rect.height
+        avaliable_space_y = (self.settings.screen_height -
+                             (3 * ship_height) - 2 * alien.rect.height)
+        number_rows = avaliable_space_y // (2 * alien.rect.height)
+
+        for row_number in range(number_rows):
+            for alien_nuumber in range(number_alien_x):
+                self._create_alien(alien_nuumber, row_number)
 
     def _full_screen(self):
         # 全屏，但是先不用
@@ -30,8 +57,12 @@ class AlienInvasion:
             self.ship.update()
             self.bullets.update()
             self._update_bullets()
-            self._update_screen()
+            self.aliens.update()
+            self._update_aliens()
             self.clock.tick(60)
+
+    def _update_aliens(self):
+        self.aliens.update()
 
     def _update_bullets(self):
         for bullet in self.bullets.copy():
@@ -78,6 +109,8 @@ class AlienInvasion:
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
+
+        self.aliens.draw(self.screen)
         pygame.display.flip()
 
 
