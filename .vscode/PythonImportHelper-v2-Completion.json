@@ -1,0 +1,113 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "Sprite",
+        "importPath": "pygame.sprite",
+        "description": "pygame.sprite",
+        "isExtraImport": true,
+        "detail": "pygame.sprite",
+        "documentation": {}
+    },
+    {
+        "label": "Sprite",
+        "importPath": "pygame.sprite",
+        "description": "pygame.sprite",
+        "isExtraImport": true,
+        "detail": "pygame.sprite",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "setting",
+        "description": "setting",
+        "isExtraImport": true,
+        "detail": "setting",
+        "documentation": {}
+    },
+    {
+        "label": "Ship",
+        "importPath": "ship",
+        "description": "ship",
+        "isExtraImport": true,
+        "detail": "ship",
+        "documentation": {}
+    },
+    {
+        "label": "Bullet",
+        "importPath": "bullet",
+        "description": "bullet",
+        "isExtraImport": true,
+        "detail": "bullet",
+        "documentation": {}
+    },
+    {
+        "label": "Alien",
+        "importPath": "alien",
+        "description": "alien",
+        "isExtraImport": true,
+        "detail": "alien",
+        "documentation": {}
+    },
+    {
+        "label": "Alien",
+        "kind": 6,
+        "importPath": "alien_war.alien",
+        "description": "alien_war.alien",
+        "peekOfCode": "class Alien(Sprite):\n    def __init__(self, ai_game):\n        super().__init__()\n        self.screen = ai_game.screen\n        self.settings = ai_game.settings\n        self.image = pygame.image.load(\"images/alien.bmp\")\n        self.rect = self.image.get_rect()\n        self.rect.x = self.rect.width\n        self.rect.y = self.rect.height\n        self.x = float(self.rect.x)",
+        "detail": "alien_war.alien",
+        "documentation": {}
+    },
+    {
+        "label": "AlienInvasion",
+        "kind": 6,
+        "importPath": "alien_war.alien_invasion",
+        "description": "alien_war.alien_invasion",
+        "peekOfCode": "class AlienInvasion:\n    def __init__(self):\n        pygame.init()\n        self.clock = pygame.time.Clock()\n        self.settings = Settings()\n        self.screen = pygame.display.set_mode(\n            (self.settings.screen_width, self.settings.screen_height)\n        )\n        pygame.display.set_caption(\"Alien Invasion\")\n        self.ship = Ship(self)",
+        "detail": "alien_war.alien_invasion",
+        "documentation": {}
+    },
+    {
+        "label": "Bullet",
+        "kind": 6,
+        "importPath": "alien_war.bullet",
+        "description": "alien_war.bullet",
+        "peekOfCode": "class Bullet(Sprite):\n    # 管理飞船锁发射子弹的类\n    def __init__(self, ai_game):\n        # 当前飞船位置创建一个子弹对象\n        super().__init__()\n        self.screen = ai_game.screen\n        self.settings = ai_game.settings\n        self.color = self.settings.bullet_color\n        # 在(0,0)处创建一个表示子弹的矩形，再设置正确的位置\n        self.rect = pygame.Rect(",
+        "detail": "alien_war.bullet",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "alien_war.setting",
+        "description": "alien_war.setting",
+        "peekOfCode": "class Settings:\n    def __init__(self):\n        self.screen_width = 1200\n        self.screen_height = 800\n        self.bg_color = (230, 230, 230)\n        self.ship_speed = 10\n        # 子弹设置\n        self.bullet_speed = 3.0\n        self.bullet_width = 200\n        self.bullet_height = 15",
+        "detail": "alien_war.setting",
+        "documentation": {}
+    },
+    {
+        "label": "Ship",
+        "kind": 6,
+        "importPath": "alien_war.ship",
+        "description": "alien_war.ship",
+        "peekOfCode": "class Ship:\n    def __init__(self, ai_game):\n        self.screen = ai_game.screen\n        self.settings = ai_game.settings\n        self.screen_react = ai_game.screen.get_rect()\n        self.image = pygame.image.load(\"images/ship.bmp\")\n        self.rect = self.image.get_rect()\n        self.rect.midbottom = self.screen_react.midbottom\n        self.x = float(self.rect.x)\n        # 飞船一开始不能移动",
+        "detail": "alien_war.ship",
+        "documentation": {}
+    }
+]
