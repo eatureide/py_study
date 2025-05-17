@@ -66,6 +66,152 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "Alien",
         "kind": 6,
         "importPath": "alien_war.alien",
@@ -108,6 +254,321 @@
         "description": "alien_war.ship",
         "peekOfCode": "class Ship:\n    def __init__(self, ai_game):\n        self.screen = ai_game.screen\n        self.settings = ai_game.settings\n        self.screen_react = ai_game.screen.get_rect()\n        self.image = pygame.image.load(\"images/ship.bmp\")\n        self.rect = self.image.get_rect()\n        self.rect.midbottom = self.screen_react.midbottom\n        self.x = float(self.rect.x)\n        # 飞船一开始不能移动",
         "detail": "alien_war.ship",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.asgi",
+        "description": "learning_log.learning_log.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "learning_log.learning_log.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-x3z6b#j@d=l8t1)tzfkw_x&(8yl%-j(=^0ot&k_(*1dhv-r8&z'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-x3z6b#j@d=l8t1)tzfkw_x&(8yl%-j(=^0ot&k_(*1dhv-r8&z'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # 我的应用程序\n    'learning_logs',\n    # 默认添加的应用程序\n    'django.contrib.admin',",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # 我的应用程序\n    'learning_logs',\n    # 默认添加的应用程序\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # 我的应用程序\n    'learning_logs',\n    # 默认添加的应用程序\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    # 我的应用程序\n    'learning_logs',\n    # 默认添加的应用程序\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'learning_log.urls'",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "ROOT_URLCONF = 'learning_log.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'learning_log.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.settings",
+        "description": "learning_log.learning_log.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "learning_log.learning_log.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.urls",
+        "description": "learning_log.learning_log.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('learning_logs.urls'))\n]",
+        "detail": "learning_log.learning_log.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "learning_log.learning_log.wsgi",
+        "description": "learning_log.learning_log.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "learning_log.learning_log.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning_log.learning_logs.migrations.0001_initial",
+        "description": "learning_log.learning_logs.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Topic',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('text', models.CharField(max_length=200)),",
+        "detail": "learning_log.learning_logs.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "learning_log.learning_logs.migrations.0002_entry",
+        "description": "learning_log.learning_logs.migrations.0002_entry",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('learning_logs', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Entry',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('text', models.TextField()),",
+        "detail": "learning_log.learning_logs.migrations.0002_entry",
+        "documentation": {}
+    },
+    {
+        "label": "LearningLogsConfig",
+        "kind": 6,
+        "importPath": "learning_log.learning_logs.apps",
+        "description": "learning_log.learning_logs.apps",
+        "peekOfCode": "class LearningLogsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'learning_logs'",
+        "detail": "learning_log.learning_logs.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Topic",
+        "kind": 6,
+        "importPath": "learning_log.learning_logs.models",
+        "description": "learning_log.learning_logs.models",
+        "peekOfCode": "class Topic(models.Model):\n    # 用户学习的主题\n    text = models.CharField(max_length=200)\n    date_added = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        # 返回模型的字符串表示\n        return self.text\nclass Entry(models.Model):\n    # 学到的某个关联主题的具体知识\n    topic = models.ForeignKey(Topic, on_delete=models.CASCADE)",
+        "detail": "learning_log.learning_logs.models",
+        "documentation": {}
+    },
+    {
+        "label": "Entry",
+        "kind": 6,
+        "importPath": "learning_log.learning_logs.models",
+        "description": "learning_log.learning_logs.models",
+        "peekOfCode": "class Entry(models.Model):\n    # 学到的某个关联主题的具体知识\n    topic = models.ForeignKey(Topic, on_delete=models.CASCADE)\n    text = models.TextField()\n    date_added = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name_plural = 'entries'\n    def __str__(self):\n        # 返回模型的字符串表示\n        return f\"{self.text[:50]}...\"",
+        "detail": "learning_log.learning_logs.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "learning_log.learning_logs.urls",
+        "description": "learning_log.learning_logs.urls",
+        "peekOfCode": "app_name = 'learning_logs'\nurlpatterns = [\n    # 主页\n    path('', views.index, name='index'),\n    # 显示所有主题\n    path('topics/', views.topics, name='topics'),\n    # 特定主题的详情页面\n    path('topics/<int:topic_id>/', views.topic, name='topic')\n]",
+        "detail": "learning_log.learning_logs.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "learning_log.learning_logs.urls",
+        "description": "learning_log.learning_logs.urls",
+        "peekOfCode": "urlpatterns = [\n    # 主页\n    path('', views.index, name='index'),\n    # 显示所有主题\n    path('topics/', views.topics, name='topics'),\n    # 特定主题的详情页面\n    path('topics/<int:topic_id>/', views.topic, name='topic')\n]",
+        "detail": "learning_log.learning_logs.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "learning_log.learning_logs.views",
+        "description": "learning_log.learning_logs.views",
+        "peekOfCode": "def index(request):\n    return render(request, 'learning_logs/index.html')\ndef topics(request):\n    topics = Topic.objects.order_by('date_added')\n    context = {'topics': topics}\n    return render(request, 'learning_logs/topics.html', context)\ndef topic(request, topic_id):\n    topic = Topic.objects.get(id=topic_id)\n    entries = topic.entry_set.order_by('-date_added')\n    context = {'topic': topic, 'entries': entries}",
+        "detail": "learning_log.learning_logs.views",
+        "documentation": {}
+    },
+    {
+        "label": "topics",
+        "kind": 2,
+        "importPath": "learning_log.learning_logs.views",
+        "description": "learning_log.learning_logs.views",
+        "peekOfCode": "def topics(request):\n    topics = Topic.objects.order_by('date_added')\n    context = {'topics': topics}\n    return render(request, 'learning_logs/topics.html', context)\ndef topic(request, topic_id):\n    topic = Topic.objects.get(id=topic_id)\n    entries = topic.entry_set.order_by('-date_added')\n    context = {'topic': topic, 'entries': entries}\n    return render(request, 'learning_logs/topic.html', context)",
+        "detail": "learning_log.learning_logs.views",
+        "documentation": {}
+    },
+    {
+        "label": "topic",
+        "kind": 2,
+        "importPath": "learning_log.learning_logs.views",
+        "description": "learning_log.learning_logs.views",
+        "peekOfCode": "def topic(request, topic_id):\n    topic = Topic.objects.get(id=topic_id)\n    entries = topic.entry_set.order_by('-date_added')\n    context = {'topic': topic, 'entries': entries}\n    return render(request, 'learning_logs/topic.html', context)",
+        "detail": "learning_log.learning_logs.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "learning_log.manage",
+        "description": "learning_log.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'learning_log.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "learning_log.manage",
+        "documentation": {}
+    },
+    {
+        "label": "word_count",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def word_count(str):\n    str_split = str.split(' ')\n    mark_point_list = ['?', '!', '.', ',']\n    word_obj = {}\n    word_arr = []\n    for i in str_split:\n        str = ''\n        for j in i:\n            in_list = j in mark_point_list\n            if in_list == False:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "item_input",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def item_input(run=True):\n    if run == False:\n        return\n    print('请输入操作类型', 'add添加商品', 'query查询商品列表', 'delete删除商品', 'q退出程序')\n    action_type = input()\n    while (True):\n        if action_type == 'add':\n            print('请输入商品名称')\n            item_name = input()\n            in_list = item_name in item_list",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "input_time",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def input_time(value):\n    format = value.split('/')\n    if (len(format) != 3):\n        print('输入日期格式有误')\n        return\n    day = format[0]\n    month = format[1]\n    year = format[2]\n    if day.isdigit() == False or int(day) >= 32:\n        print('输入的日期有误')",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "item_list",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "item_list = {}\ndef item_input(run=True):\n    if run == False:\n        return\n    print('请输入操作类型', 'add添加商品', 'query查询商品列表', 'delete删除商品', 'q退出程序')\n    action_type = input()\n    while (True):\n        if action_type == 'add':\n            print('请输入商品名称')\n            item_name = input()",
+        "detail": "main",
         "documentation": {}
     }
 ]
