@@ -212,6 +212,15 @@
         "documentation": {}
     },
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "Alien",
         "kind": 6,
         "importPath": "alien_war.alien",
@@ -533,6 +542,33 @@
         "description": "learning_log.manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'learning_log.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "learning_log.manage",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_area",
+        "kind": 2,
+        "importPath": "h",
+        "description": "h",
+        "peekOfCode": "def calculate_area():\n    print('请输入圆的半径')\n    m = input()\n    if m.isdigit() == True:\n        trans_m = int(m)\n        res = round(\n            math.pi * (trans_m * trans_m), 2\n        )\n        return print('圆的面积是', res)\n    print('请输入有效的数字！')",
+        "detail": "h",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_fahrenheit",
+        "kind": 2,
+        "importPath": "h",
+        "description": "h",
+        "peekOfCode": "def calculate_fahrenheit():\n    print('请输入摄氏温度')\n    try:\n        temperture_input = float(input())\n        fahrenheit = temperture_input * 9 / 5 + 32\n        print('华氏温度是', fahrenheit)\n    except ValueError:\n        print('请输入有效的数字！')\n# 第三题\ndef shopping_list():",
+        "detail": "h",
+        "documentation": {}
+    },
+    {
+        "label": "shopping_list",
+        "kind": 2,
+        "importPath": "h",
+        "description": "h",
+        "peekOfCode": "def shopping_list():\n    arr = []\n    arr_len = 0\n    while (arr_len <= 2):\n        print(f'请输入商品{arr_len + 1}的名称')\n        name = input()\n        print(f'请输入商品{arr_len + 1}的价格')\n        price = input()\n        if price.isdigit() == False:\n            price('请输入有效的数字!')",
+        "detail": "h",
         "documentation": {}
     },
     {

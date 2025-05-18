@@ -20,7 +20,7 @@ def word_count(str):
     return word_obj
 
 
-word_count(str='Hello world! Hello Python.')
+# word_count(str='Hello world! Hello Python.')
 
 
 # 第二题
@@ -52,6 +52,10 @@ def item_input(run=True):
             break
 
         if action_type == 'query':
+            sort_item = sorted(
+                [i for i in item_list], key=lambda x: x[0]
+            )
+            print(sort_item)
             print('当前商品列表', item_list)
             break
 
@@ -60,7 +64,10 @@ def item_input(run=True):
             item_input(run=False)
             return
 
-    item_input()
+    item_input(run = True)
+
+
+item_input(run=True)
 
 
 def input_time(value):
