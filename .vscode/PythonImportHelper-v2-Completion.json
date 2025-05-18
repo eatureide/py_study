@@ -221,6 +221,15 @@
         "documentation": {}
     },
     {
+        "label": "collections",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "collections",
+        "description": "collections",
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "Alien",
         "kind": 6,
         "importPath": "alien_war.alien",
@@ -549,7 +558,7 @@
         "kind": 2,
         "importPath": "h",
         "description": "h",
-        "peekOfCode": "def calculate_area():\n    print('请输入圆的半径')\n    m = input()\n    if m.isdigit() == True:\n        trans_m = int(m)\n        res = round(\n            math.pi * (trans_m * trans_m), 2\n        )\n        return print('圆的面积是', res)\n    print('请输入有效的数字！')",
+        "peekOfCode": "def calculate_area():\n    print(\"请输入圆的半径\")\n    m = input()\n    if m.isdigit() == True:\n        trans_m = int(m)\n        res = round(math.pi * (trans_m * trans_m), 2)\n        return print(\"圆的面积是\", res)\n    print(\"请输入有效的数字！\")\n# 第二题\ndef calculate_fahrenheit():",
         "detail": "h",
         "documentation": {}
     },
@@ -558,7 +567,7 @@
         "kind": 2,
         "importPath": "h",
         "description": "h",
-        "peekOfCode": "def calculate_fahrenheit():\n    print('请输入摄氏温度')\n    try:\n        temperture_input = float(input())\n        fahrenheit = temperture_input * 9 / 5 + 32\n        print('华氏温度是', fahrenheit)\n    except ValueError:\n        print('请输入有效的数字！')\n# 第三题\ndef shopping_list():",
+        "peekOfCode": "def calculate_fahrenheit():\n    print(\"请输入摄氏温度\")\n    try:\n        temperture_input = float(input())\n        fahrenheit = temperture_input * 9 / 5 + 32\n        print(\"华氏温度是\", fahrenheit)\n    except ValueError:\n        print(\"请输入有效的数字！\")\n# 第三题\ndef shopping_list():",
         "detail": "h",
         "documentation": {}
     },
@@ -567,7 +576,7 @@
         "kind": 2,
         "importPath": "h",
         "description": "h",
-        "peekOfCode": "def shopping_list():\n    arr = []\n    arr_len = 0\n    while (arr_len <= 2):\n        print(f'请输入商品{arr_len + 1}的名称')\n        name = input()\n        print(f'请输入商品{arr_len + 1}的价格')\n        price = input()\n        if price.isdigit() == False:\n            price('请输入有效的数字!')",
+        "peekOfCode": "def shopping_list():\n    arr = []\n    arr_len = 0\n    while arr_len <= 2:\n        print(f\"请输入商品{arr_len + 1}的名称\")\n        name = input()\n        print(f\"请输入商品{arr_len + 1}的价格\")\n        price = input()\n        if price.isdigit() == False:\n            price(\"请输入有效的数字!\")",
         "detail": "h",
         "documentation": {}
     },
@@ -605,6 +614,33 @@
         "description": "main",
         "peekOfCode": "item_list = {}\ndef item_input(run=True):\n    if run == False:\n        return\n    print('请输入操作类型', 'add添加商品', 'query查询商品列表', 'delete删除商品', 'q退出程序')\n    action_type = input()\n    while (True):\n        if action_type == 'add':\n            print('请输入商品名称')\n            item_name = input()",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "FrenchDeck",
+        "kind": 6,
+        "importPath": "p",
+        "description": "p",
+        "peekOfCode": "class FrenchDeck:\n    ranks = [str(n) for n in range(2, 11)] + list('JQKA')\n    suits = 'spades diamonds clubs hearts'.split()\n    def __init__(self):\n        self._cards = [\n            Card(rank, suit) for suit in self.suits\n            for rank in self.ranks\n        ]\n    def __len__(self):\n        print('hi')",
+        "detail": "p",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "kind": 5,
+        "importPath": "p",
+        "description": "p",
+        "peekOfCode": "Card = collections.namedtuple('Card', ['rank', 'suit'])\nclass FrenchDeck:\n    ranks = [str(n) for n in range(2, 11)] + list('JQKA')\n    suits = 'spades diamonds clubs hearts'.split()\n    def __init__(self):\n        self._cards = [\n            Card(rank, suit) for suit in self.suits\n            for rank in self.ranks\n        ]\n    def __len__(self):",
+        "detail": "p",
+        "documentation": {}
+    },
+    {
+        "label": "deck",
+        "kind": 5,
+        "importPath": "p",
+        "description": "p",
+        "peekOfCode": "deck = FrenchDeck()\nprint(\n    deck[-1]\n)",
+        "detail": "p",
         "documentation": {}
     }
 ]
